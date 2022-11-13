@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import './App.css'
+import Game from './component/game/Game'
+import LeftAppContainer from './component/leftcontainer/leftAppContainer'
+import Signin from './component/signin/Signin'
+import Main from './mainComponent/main'
 
-function App() {
+
+const App = () => {
+  const [currentRemove ,setRemove] = useState('no component remove')
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+       
+       <LeftAppContainer />
+       <Routes>
+        <Route path='/game' element={<Game setRemove ={setRemove}/>}  />
+       <Route path='/' element={<Main text={'Live'} currentRemove={currentRemove} />} />
+       <Route path='*' element={<div className='signin-page'></div>} />
+       <Route path='/signin' element={<Signin />} />
+       <Route path='/login' element={<div className='main-App-design'><h1>hello login</h1></div>} />
+
+       
+       </Routes>
+    </>
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,10 @@
+.header-button-signup{
+     width: 90px;
+     height: 25px;
+     text-transform: uppercase;
+     border-radius: 15px;
+     border: none;
+     font-weight: bold;
+     margin: 5px;
+     
+}

@@ -1,0 +1,69 @@
+.main-App-design{
+     width: 85vw;
+     height: 100vh;
+     float: right;
+     display: flex;
+     flex-direction: column;
+     color: white;
+     
+}
+.main-app-header{
+     width: 100%;
+     height: 15vh;
+     display: flex;
+     flex-direction: row;
+     padding: 10px 0px 0px 10px;
+     
+     
+}
+.main-app-section{
+     width: 100%;
+     height: 70vh;
+     padding: 10px 0px 0px 10px;
+     
+}
+.main-app-footer{
+     width: 100%;
+     height: 15vh;
+     display: flex;
+     flex-direction: row;
+     padding: 10px 0px 0px 10px;
+     
+}
+select{
+     width: 80vw;
+     height: 6vh;
+     background-color: rgba(247, 123, 201, 0.705);
+     margin: 10px 20px 0px 10px;
+}
+.section-app, select, option{
+     color: white;
+     font-weight: bold;
+     font-size: 20px;
+}
+.app-card{
+     display: grid;
+     grid-template-columns: auto auto auto ;
+     grid-gap: 1em;
+     padding: 10px 0px 0px 10px;
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+     .app-card{
+          display: grid;
+          grid-template-columns: auto;
+          grid-gap: 2em;
+          justify-content: center;
+     }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+     .app-card{
+          display: grid;
+          grid-template-columns: auto auto;
+          grid-gap: 2em;
+          justify-content: center;
+      
+     }
+}

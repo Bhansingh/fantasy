@@ -1,0 +1,33 @@
+[title='align-item']{
+     display: flex;
+     align-items: center;
+     /* justify-content: space-between; */
+    
+}
+.app-icon-container{
+     background: rgb(199,21,133);
+     width: 100%;
+     border: 1px solid black;
+}
+.icon-container-item{
+     background: rgb(199,21,133);
+     opacity: 0.8;
+     cursor: pointer;
+     transition: all 1s;
+     transform: scale(0.8);
+
+}
+.icon-container-item:hover{
+     opacity: 1;
+     transform: scale(1);
+     /* border: 1px solid black; */
+     color: white;
+     
+}
+.icon-container-item:hover .icon-text{
+transform: rotate(15deg);
+}
+
+.icon-text{
+     margin-left: 1em;
+}
